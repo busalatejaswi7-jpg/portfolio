@@ -12,12 +12,14 @@ html {
 
 body {
   @apply bg-bg text-text antialiased;
-  background-image: radial-gradient(circle at 20% 10%, rgba(99, 102, 241, 0.15), transparent 30%), radial-gradient(circle at 80% 0%, rgba(16, 185, 129, 0.08), transparent 28%);
+  background-image:
+    radial-gradient(circle at 0% 0%, rgba(120, 119, 198, 0.15), transparent 35%),
+    radial-gradient(circle at 100% 10%, rgba(56, 189, 248, 0.08), transparent 30%);
 }
 
 @layer components {
   .card {
-    @apply rounded-2xl border border-white/10 bg-white/[0.03] transition duration-300;
+    @apply rounded-2xl border border-white/10 bg-white/[0.03] shadow-[0_1px_0_rgba(255,255,255,0.03)_inset] transition duration-300;
   }
 
   .badge {
@@ -41,7 +43,7 @@ body {
   }
 
   .project-link {
-    @apply inline-flex items-center gap-2 text-zinc-200 transition group-hover:text-white;
+    @apply inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/[0.02] px-3 py-2 text-zinc-200 transition hover:bg-white/10 hover:text-white;
   }
 
   .contact-link {
