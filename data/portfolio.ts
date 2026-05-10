@@ -1,14 +1,15 @@
 export const personal = {
   name: 'Busala Tejaswi',
   role: 'Full Stack Developer (MERN)',
-  tagline: 'Designing secure, scalable web products from API layer to polished UI.',
+  headline: 'Building reliable full-stack products with clean architecture and modern UX.',
+  tagline:
+    'Full Stack Developer with strong MERN foundations, focused on secure authentication, scalable APIs, and production-ready frontend systems.',
   email: 'busalatejaswi3@gmail.com',
   phone: '+91-9381979532',
   github: 'https://github.com/busalatejaswi7-jpg',
   linkedin: 'https://linkedin.com/in/tejaswi-b-009ba227b',
   location: 'Srikakulam, India',
-  summary:
-    'Full Stack Developer with strong MERN foundations and practical experience building authentication-heavy applications, REST APIs, and deployment-ready products. Passionate about clean architecture, developer productivity, and AI-assisted engineering workflows.',
+  availability: 'Open to 2026 internships and junior software engineering roles',
 }
 
 export const navItems = [
@@ -17,25 +18,30 @@ export const navItems = [
   { id: 'skills', label: 'Skills' },
   { id: 'projects', label: 'Projects' },
   { id: 'experience', label: 'Experience' },
-  { id: 'certifications', label: 'Certifications' },
+  { id: 'credentials', label: 'Credentials' },
   { id: 'contact', label: 'Contact' },
 ]
 
 export const skillGroups = [
   { title: 'Languages', items: ['JavaScript', 'TypeScript', 'C', 'Java', 'Python (Basics)'] },
   { title: 'Frontend', items: ['React.js', 'Next.js', 'Tailwind CSS', 'React Router', 'HTML5', 'CSS3'] },
-  { title: 'Backend', items: ['Node.js', 'Express.js', 'REST APIs', 'JWT Authentication'] },
-  { title: 'Database', items: ['MongoDB', 'MongoDB Atlas', 'MySQL', 'SQL'] },
-  { title: 'Engineering', items: ['OOP', 'DBMS', 'SDLC', 'API Integration', 'Prompt Engineering'] },
-  { title: 'Tools', items: ['Git', 'GitHub', 'Postman', 'VS Code', 'Vercel', 'Render', 'Rocode', 'Codebuff'] },
+  { title: 'Backend', items: ['Node.js', 'Express.js', 'REST APIs', 'JWT Authentication', 'Multer'] },
+  { title: 'Databases', items: ['MongoDB', 'MongoDB Atlas', 'MySQL', 'SQL'] },
+  { title: 'Concepts', items: ['OOP', 'DBMS', 'SDLC', 'API Integration', 'Authentication', 'Prompt Engineering'] },
+  { title: 'Tools & Deployment', items: ['Git', 'GitHub', 'Postman', 'VS Code', 'Render', 'Vercel', 'Rocode', 'Codebuff'] },
 ]
 
 export const projects = [
   {
     title: 'AI Career Intelligence Platform',
     description:
-      'End-to-end platform for tracking job applications, analyzing skill gaps, and managing resumes with secure account workflows and production deployment.',
-    highlights: ['JWT + bcrypt authentication', 'Resume upload with Multer', 'CRUD APIs with MongoDB Atlas', 'Frontend on Vercel, backend on Render'],
+      'Full-stack product to track job applications, analyze skill gaps, and manage resumes with secure authentication and production deployment.',
+    highlights: [
+      'Implemented JWT + bcrypt authentication and protected user workflows',
+      'Built CRUD APIs using Express.js + MongoDB Atlas',
+      'Integrated resume upload with Multer',
+      'Deployed frontend on Vercel and backend on Render',
+    ],
     stack: ['MERN', 'JWT', 'Multer', 'MongoDB Atlas', 'Axios'],
     github: 'https://github.com/your-username/your-repo',
     live: 'https://ai-analyzer-kohl.vercel.app',
@@ -43,8 +49,13 @@ export const projects = [
   {
     title: 'Developer Hub Authentication System',
     description:
-      'Full-stack auth platform with role-based access, protected routes, and robust admin workflows for search, pagination, and user management.',
-    highlights: ['Role-based access (User/Admin)', 'Axios interceptors + protected routes', 'React Context auth state', 'Resolved MongoDB Atlas production constraints'],
+      'Role-based full-stack authentication platform with protected routes, admin tooling, and resilient client-server security workflows.',
+    highlights: [
+      'Designed User/Admin access control architecture',
+      'Implemented JWT auth, Axios interceptors, and protected routes',
+      'Built admin APIs for search, pagination, and account management',
+      'Managed authentication state with React Context API',
+    ],
     stack: ['React.js', 'Node.js', 'Express.js', 'MongoDB Atlas', 'JWT'],
     github: 'https://github.com/busalatejaswi7-jpg',
     live: 'https://frontend-pskx.onrender.com',
@@ -52,8 +63,13 @@ export const projects = [
   {
     title: 'Task Management Backend API',
     description:
-      'Production-oriented backend API implementing secure authorization, ownership-aware CRUD operations, and scalable query patterns.',
-    highlights: ['Admin/User authorization model', 'Filtering, pagination, sorting', 'express-validator middleware', 'Centralized error handling'],
+      'Production-ready backend API emphasizing secure role-based authorization, ownership-driven CRUD, and scalable query operations.',
+    highlights: [
+      'Developed Admin/User authorization and ownership validation',
+      'Implemented filtering, pagination, and sorting',
+      'Added centralized error handling and express-validator middleware',
+      'Deployed API with MongoDB Atlas integration on Render',
+    ],
     stack: ['Node.js', 'Express.js', 'MongoDB Atlas', 'JWT', 'Render'],
     github: 'https://github.com/busalatejaswi7-jpg',
     live: 'https://task-manager-api-gl7e.onrender.com',
@@ -61,8 +77,13 @@ export const projects = [
   {
     title: 'Food Ordering Application',
     description:
-      'Frontend-first application focused on modular architecture, dynamic search experience, and runtime optimizations for fast navigation.',
-    highlights: ['Component-driven React architecture', 'Search with efficient state updates', 'Lazy loading with Suspense', 'Online/offline status detection'],
+      'Component-driven frontend application with responsive UX, dynamic search, and performance-focused React architecture.',
+    highlights: [
+      'Built modular UI architecture using React.js and React Router',
+      'Implemented real-time search with efficient state updates',
+      'Improved performance via lazy loading and Suspense',
+      'Used Browser Network APIs for online/offline status detection',
+    ],
     stack: ['React.js', 'React Router', 'CSS3', 'Browser Network APIs'],
     github: 'https://github.com/busalatejaswi7-jpg',
     live: '#',
@@ -72,18 +93,25 @@ export const projects = [
 export const experience = {
   company: 'Agentic AI Academy',
   role: 'AI Tools & Full Stack Development Intern',
+  summary:
+    'Contributed to real-world MERN products while leveraging AI-assisted development for faster delivery, cleaner abstractions, and dependable production outcomes.',
   bullets: [
-    'Built and enhanced MERN applications using AI-assisted workflows to accelerate delivery while preserving maintainable architecture.',
-    'Leveraged OpenAI Codex, Claude, and Rocode to scaffold APIs, refine frontend modules, and resolve complex debugging scenarios.',
-    'Applied prompt engineering to generate reusable API patterns, database schemas, and implementation templates.',
-    'Contributed to rapid prototyping and scalable product development with a focus on automation and quality.',
+    'Accelerated full-stack feature delivery using OpenAI Codex, Claude, and Rocode workflows.',
+    'Scaffolded backend APIs, improved frontend component systems, and debugged complex integration issues.',
+    'Applied prompt engineering to generate reusable API patterns, data models, and coding templates.',
+    'Built scalable, automation-ready solutions with focus on maintainability and shipping velocity.',
   ],
 }
+
+export const education = [
+  'B.Tech in Electronics and Communication Engineering (2022 – 2026), CGPA: 8.01/10',
+  'Pre-University Course (2020 – 2022), CGPA: 9.14/10',
+]
 
 export const certifications = ['Machine Learning — NPTEL', 'Namaste React — Akshay Saini']
 
 export const achievements = [
   'Solved 50+ Data Structures and Algorithms problems across arrays, strings, and recursion.',
-  'Attended technical workshops and webinars on modern full-stack engineering.',
+  'Attended technical workshops and webinars on full-stack engineering and emerging technologies.',
   'Built and deployed multiple full-stack MERN applications independently.',
 ]
